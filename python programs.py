@@ -27,7 +27,7 @@ for x in range (a, b+1):
         else:
 
             print (x)
-
+OUTPUT:14,15,16,18
 
 2.Find the year of the given Anniversary is leap year or not. If leap year then print the next Anniversary, if not leap year then print the previous Anniversary.
 Sample Input:
@@ -76,7 +76,8 @@ if x!=0:
 else:
 
     print("Next leap year:", input_year+4)
-
+OUTPUT: 1947 is not the leap year
+previous leap year:1947
 
 3.Write a program to print the given number is Perfect number or not?
 Sample Input: Given Number: 6
@@ -101,7 +102,7 @@ if (Sum == Number):
 else:
 
     print(" %d is not a Perfect Number" %Number)
-
+OUTPUT: 6 is a perfect number
 
 4.Write a program to generate Pythagorean Triplets for the given limit.
 Enter upper limit: 10
@@ -146,7 +147,8 @@ if A.isnumeric():
 else:
 
     print("invalid input")
-
+OUTPUT: 3 4 5
+        8 6 10
 
 5.Write a program to find the sum of digits of N digit number (sum should be single digit)
 Sample Input: Enter N value : 3 Enter 3 digit number: 143
@@ -170,7 +172,7 @@ while temp>0:
 
 print("Sum of Digits:", Sum)
 
-   
+   OUTPUT:sum of digits:8
 
 6.Program to find whether the given number is Armstrong number or not
 Sample Input: Enter number: 153
@@ -200,7 +202,7 @@ else:
 
     print("Not a Armstrong Number")
 
-
+OUTPUT: Armstrong number
 7.Program to find whether the given number is Harshad number or not
 Sample Input: Enter number: 21
 
@@ -228,7 +230,7 @@ if num%Sum==0:
 else:
 
     print("Not a Harshad Number")
-
+OUTPUT: Harshad number
 
 8.Program to find whether the given number is Happy number or not
 Sample Input: Enter number: 19
@@ -272,7 +274,7 @@ if result==1:
 elif result==4:
 
     print("False")
-
+OUTPUT:True 
 
 9.Program to find whether the given number is Tech number or not
 Sample Input: Enter number: 3025
@@ -300,7 +302,7 @@ if(d==n):
 else:
 
     print("Not a Tech number")
-
+OUTPUT:Tech number
 
 10.Write a program using function to calculate the simple interest. Suppose the customer is a senior citizen. She is being offered 15 percent rate of interest; he is being offered 12 percent rate of interest for all other customers, the ROI is 10 percent.
 Sample Input:
@@ -334,7 +336,7 @@ else:
 
     print("SI=",(p*n*10)/100)
 
-
+OUTPUT: SI=60000
 11.Find the number of factors for the given number and print the 1st N factors of the given number.
 Sample Input: Given number: 100
 
@@ -375,7 +377,8 @@ else:
 
         print(y[k], end=' ')
 
-   
+ OUTPUT:Number of factors=9
+        first 4 factors:1 2 4 5
 
 
 12.Write a program to print number of factors and to print nth factor of the given number.
@@ -408,7 +411,8 @@ n=int(input("Enter N value:"))
 
 print(n, "th factor is:",y[n-1])
 
-
+OUTPUT:Number of factors=9
+       4th factor is:5
 13.Write a program to print unique permutations of a given number Sample Input:
 Given Number: 143 Sample Output:
 
@@ -434,8 +438,12 @@ n=input("Enter the number")
 P=list(itertools.permutations(n))
 
 print(*[''.join(p) for p in P])
-
-
+OUTPUT:143
+       134
+       413
+       431
+       341
+       314
 14.Write a program to find the square, cube of the given decimal number Sample Input:
 Given Number: 0.6
 
@@ -449,7 +457,8 @@ num=float(input("Enter the number:"))
 print("Square number=",math.pow(num,2))
 
 print("Cube number=",round(math.pow(num,3),3))
-
+OUTPUT: Square number=0.36
+        Cube number=0.216
 
 15.Write a program to convert the Binary to Decimal, Octal Sample Input:
 Given Number: 1101 Sample Output:
@@ -485,4 +494,8 @@ if binary:
 
     print("Octal Equivalent=",oct_number)
 
-    print("Hexa Equivalent=",hexa)
+    print("Hexa Equivalent=",hexa)  
+OUTPUT:
+    Decimal Equivalent=13
+    Octal Equivalent =0o15
+    Hexa Equivalent=0xd
